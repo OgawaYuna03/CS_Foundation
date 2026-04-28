@@ -4,14 +4,19 @@ static class Program
 {
     static void Main(string[] args)
     {
-        for (int i = 0; i < 6; i++)
+
+
+        int answer = Add(4, 5);
+        Console.WriteLine(answer);
+
+        void PrintHello()
         {
-            if (i == 2)
-            {
-                continue;
-            }
-            Console.WriteLine($"i = {i}");
+            Console.WriteLine("Hello, World!");
         }
-        Console.WriteLine("終了");
+
+        int Add(int x, int y)
+        {
+            return x + y;
+        }
     }
 }
