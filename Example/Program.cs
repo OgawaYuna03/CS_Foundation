@@ -4,19 +4,14 @@ static class Program
 {
     static void Main(string[] args)
     {
-        bool a = true, b = false;
-        Console.WriteLine($"a && a = {a && a}");
-        Console.WriteLine($"a && b = {a && b}");
-        Console.WriteLine($"b && a = {b && a}");
-        Console.WriteLine($"b && b = {b && b}");
-        Console.WriteLine($"a || a = {a || a}");
-        Console.WriteLine($"a || b = {a || b}");
-        Console.WriteLine($"b || a = {b || a}");
-        Console.WriteLine($"b || b = {b || b}");
-        int x = 1;
-        Console.WriteLine($"b && x++ > 1 = {b && x++ > 1}");
-        Console.WriteLine($"x = {x}");
-        Console.WriteLine($"b & x++ > 1 = {b & x++ > 1}");
-        Console.WriteLine($"x = {x}");
+        for (int i = 0; i < 6; i++)
+        {
+            if (i == 2)
+            {
+                continue;
+            }
+            Console.WriteLine($"i = {i}");
+        }
+        Console.WriteLine("終了");
     }
 }
