@@ -1,4 +1,4 @@
-namespace Ex_03_01;
+namespace Ex_03_02;
 
 /// <summary>
 /// 商品情報を表すクラス
@@ -10,5 +10,11 @@ public class Item
     public string itemName; // 商品名
     public int price;       // 単価
 
+public void Print()
+    {
+        Console.WriteLine($"商品番号={itemNo}");
+        Console.WriteLine($"商品名={itemName}");
+        Console.WriteLine($"単価={price}");
+    }
 }
 
