@@ -1,4 +1,4 @@
-﻿namespace Ex_02_03;
+﻿namespace Ex_02_20;
 
 static class Program
 {
@@ -11,7 +11,5 @@ static class Program
         System.Console.WriteLine($"5を加算した結果は{result}です");
         result = int.Parse(number) - 5;
         System.Console.WriteLine($"5を減算した結果は{result}です");
-
     }
-    
 }
