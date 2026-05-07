@@ -1,4 +1,5 @@
-﻿using System.Net.ServerSentEvents;
+﻿using System.Buffers;
+using System.Net.ServerSentEvents;
 
 namespace Ex_03_01;
 
@@ -6,19 +7,19 @@ static class Program
 {
     static void Main(string[] args)
     {
-        Item item = new();
-
         Item item = new Item();
-        Console.Write("商品番号を入力してください->");
+       Console.Write("商品番号を入力して下さい->");
         item.itemNo = int.Parse(Console.ReadLine());
-        Console.Write("商品名を入力してください->");
+        Console.Write("商品名を入力して下さい->");
         item.itemName = Console.ReadLine();
-        Console.Write("単価を入力してください->");
+        Console.Write("単価を入力して下さい->");
         item.price = int.Parse(Console.ReadLine());
+
         Console.WriteLine("結果");
-        Console.WriteLine($"商品番号={item.itemNo}");
-        Console.WriteLine($"商品名={item.itemName}");
-        Console.WriteLine($"単価={item.price}");
+        Console.WriteLine($"商品番号 = {item.itemNo}");
+        Console.WriteLine($"商品名 = {item.itemName}");
+        Console.WriteLine($"単価 = {item.price}");
+
 
     }
 }
